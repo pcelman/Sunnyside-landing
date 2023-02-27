@@ -20,15 +20,18 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: var(--font2);
 }
 
 .container {
-  padding: 80px p;
+  padding: 80px 0;
   width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
 }
+
 .hero {
   background-image: url("./images/mobile/image-header.jpg");
   background-size: cover;
@@ -42,6 +45,10 @@ body {
   align-items: center;
   grid-template-columns: repeat(2, max-content);
   justify-content: space-between;
+}
+
+.nav__links {
+display: none;
 }
 
 .hero__main {
@@ -185,7 +192,7 @@ font-family: var(--p-text);
 .testimonials__paragraph {
     color: var(--dark-blue);
     line-height: 1.5;
-    margin: 1.5rem;
+    margin: 1.5rem ;
     font-family: var(--p-text);
 }
 
@@ -204,6 +211,8 @@ font-family: var(--p-text);
 .testimonials__container {
     text-align: center;
 }
+
+ /* gallery  */
 
 .gallery {
 display: grid;
@@ -234,8 +243,178 @@ grid-template-columns: repeat(2,1fr);
 
 .footer {
     background-color: #90D4C5;
+    text-align: center;
+    padding: 3.5rem 0;
 }
 
 .footer__logo {
-    width: 170px;
+    width: 180px;
+}
+
+.footer__nav {
+  width: 85%;
+  max-width: 400px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link {
+  color: var(--dark-moderate-cyan);
+  text-decoration: none;
+  padding: 1.5rem 0 4.5rem;
+
+}
+
+.footer__social {
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: max-content;
+/* margin: 0 auto; */
+justify-content: center;
+/* justify-items: space-between; */
+align-items: center;
+gap: 1.8rem;
+}
+
+@media (min-width: 768px){
+  .hero {
+    background-image: url("./images/desktop/image-header.jpg");   
+  }
+ 
+/* nav  */
+  .nav__hamburger {
+    display: none;
+  }
+
+  .nav__links {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav__link {
+    text-decoration: none;
+    color: white;
+    font-family: var(--p-text);
+  }
+
+  .nav__link--cta {
+  color: var(--dark-blue);
+  background-color: white;
+  border-radius: 2em;
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+  font-family: var(--title);
+  }
+  
+  /* services     */
+  
+  .services {
+    grid-template-rows: repeat(2, 500px );
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "text1 img1"
+    "img2 text2";
+  }
+  
+  .services__image {
+    background-image: url("./images/desktop/image-transform.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-area: img1;
+  }
+  
+  .services__texts {
+    text-align: start;
+    grid-area: text1;
+    padding: 2rem 3rem;
+  }
+  
+  .services__texts--2 {
+    grid-area: text2;
+  }
+ 
+  .services__image--2 {
+      background-image: url("images/desktop/image-stand-out.jpg");
+      grid-area: img2;
+  }
+  
+  /* jobs  */
+  
+  .jobs {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 500px;
+  }
+  
+  .jobs__section {
+      background-image: url(images/desktop/image-graphic-design.jpg);      
+  }
+  
+  .jobs__section--2 {
+      background-image: url(images/desktop/image-photography.jpg);
+      color: var(--dark-blue);
+  }
+  
+  /* testimonials  */
+  
+  .testimonials {
+      text-align: center;
+  }
+  
+  .testimonials__container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+  }
+
+  
+  .testimonials__paragraph {
+      margin: 2.5rem 0;
+  }
+  
+   /* gallery  */
+  
+  .gallery {
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 350px;
+  }
+  
+  .gallery__image {
+      /* width: 100%; */
+      aspect-ratio:unset;
+      background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+  }
+  
+  .gallery__image:nth-of-type(2) {
+      background-image: url(images/desktop/image-gallery-orange.jpg);
+  }
+  
+  .gallery__image:nth-of-type(3) {
+      background-image: url(images/desktop/image-gallery-cone.jpg);
+  }
+  
+  .gallery__image:nth-of-type(4) {
+      background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+  }
+  
+  /* footer  */
+  
+  .footer__link {
+    padding: 2rem 0 5rem;
+  
+  }
+  
+  .footer__social {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  /* margin: 0 auto; */
+  justify-content: center;
+  /* justify-items: space-between; */
+  align-items: center;
+  gap: 1.8rem;
+  }
+
 }
