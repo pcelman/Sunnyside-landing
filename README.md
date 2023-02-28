@@ -1,7 +1,7 @@
 ## Sunnyside landing - Frontend Mentor Challenge
 [Visit the webpage](https://pcelman.github.io/Sunnyside-landing/)
 
-<img width="764" alt="Screenshot 2023-02-27 at 22 56 49" src="https://user-images.githubusercontent.com/100241036/221733059-61a498ff-f68a-4f92-8027-e673ed9dcdff.png">
+<img width="762" alt="Screenshot 2023-02-27 at 23 01 46" src="https://user-images.githubusercontent.com/100241036/221733741-5b5ba9ac-0206-4cdf-a013-18a929c90458.png">
 
 Sunnyside Landing page is a web application that uses Flexbox and responsive design techniques to create a dynamic and user-friendly menu. The menu can be accessed by clicking on the menu icon located in the top left corner of the page on small devices. When clicked, the menu smoothly transitions into view, revealing the different sections of the website.
 
