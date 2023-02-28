@@ -1,17 +1,23 @@
-# Flexbox Responsive Layout
+## Sunnyside landing - Frontend Mentor Challenge
 
-This is an example of a responsive layout that uses Flexbox to switch from a row-column layout on small screens to a row-based layout on larger screens.
+<img width="758" alt="Screenshot 2023-02-27 at 22 35 25" src="https://user-images.githubusercontent.com/100241036/221730497-4d814194-08ff-45da-909b-234bb05e443f.png">
+
+Sunnyside Landing page is a web application that uses Flexbox and responsive design techniques to create a dynamic and user-friendly menu. The menu can be accessed by clicking on the menu icon located in the top left corner of the page on small devices. When clicked, the menu smoothly transitions into view, revealing the different sections of the website.
+
+The use of Flexbox allows for a flexible and adaptive layout that adjusts to different screen sizes and devices.
+
+Overall, Sunnyside showcases the power and versatility of Flexbox and responsive design techniques. 
 
 ## Technologies Used
 
 - HTML5
 - CSS3
 - Flexbox
+- Grid
 
 ## Features
 
-- Uses Flexbox to create a responsive layout that adapts to different screen sizes.
-- Switches from a column-based layout to a row-based layout on larger screens.
+- Uses Flexbox and Grid to create a responsive layout that adapts to different screen sizes.
 - Provides a consistent user experience across different devices.
 
 ## Getting Started
