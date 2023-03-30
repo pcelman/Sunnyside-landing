@@ -27,7 +27,7 @@ To use this code in your own project, copy the files into your project directory
 
 ## Usage
 
-Open the `index.html` file in your web browser or [visit the webpage](https://insure-pcv.vercel.app/) to view the responsive layout in action. Resize the browser window to see the layout change from column to row-based layout.
+Open the `index.html` file in your web browser or [visit the webpage](https://pcelman.github.io/Sunnyside-landing/) to view the responsive layout in action. Resize the browser window to see the layout change from column to row-based layout.
 
 ## Contributing
 
